@@ -1,0 +1,19 @@
+
+@server = http://127.0.0.1:9999
+
+POST   {{server}}/Check
+Content-Content-Type: application/x-www-form-urlencoded
+
+{
+    "success":true
+     "version": 1.2  
+}
+
+POST   {{server}}/player/create
+Content-Content-Type: application/x-www-form-urlencoded
+{             
+    "playerID": "mike",     		     
+    "currency": "RMB",      		     
+     "time": 1627884739      		     
+}
+
