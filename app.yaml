@@ -1,0 +1,15 @@
+application:
+  timeout:
+    read: 1000
+    write: 1000
+  port: 7788
+  uploadPath: "./upload"
+  mode: "debug"
+  appId: "go"
+  apiBaseRoute: "/api"
+
+  # BO UAT
+uatbackofficeurl: https://uat-backoffice-api.bpweg.com
+UserID: admin
+uatbopassword: admin12345678!
+uatboagentid: admin-api

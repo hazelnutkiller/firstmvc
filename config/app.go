@@ -9,7 +9,7 @@ import (
 
 //整個全局控制數據庫對象的文件
 
-func Config() {
+func init() {
 	//要讀取的檔名
 	viper.SetConfigName("app")
 	//要讀取的附檔名
@@ -24,4 +24,16 @@ func Config() {
 		panic("讀取設定檔出現錯誤，原因為：" + err.Error())
 	}
 	fmt.Println("application port = " + viper.GetString("application.port"))
+}
+
+func BoUserID() string {
+	return viper.GetString("UserID")
+}
+
+func BoPassword() string {
+	return viper.GetString("Password")
+}
+
+func BoAgentID() string {
+	return viper.GetString("AgentID")
 }

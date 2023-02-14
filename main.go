@@ -1,14 +1,13 @@
 package main
 
-import (
-	//"firstweb/mysql"
+import "firstweb/api"
 
-	"firstweb/routers"
-)
+//"firstweb/mysql"
 
 func main() {
+	api.UserLogin()
 
-	routers.Timeout()
+	//routers.Timeout()
 	//----------------------------------------------------
 	//實例化一個路由對象
 	// router := mux.NewRouter()
@@ -20,9 +19,9 @@ func main() {
 	// }
 
 	//-----------------------
-	routers.Router()
-	go routers.RunRouter()
-	routers.Cleanup()
+	// routers.Router()
+	// go routers.RunRouter()
+	// routers.Cleanup()
 	//------------------------
 
 	//mysql.Mysql()
